@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Metronome</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="number" id="beats" class="input" placeholder="0", value="60">
+      <h3 id="count">-1</h3>
+
+      <button id="btn" onclick="startfn()">Click here to start metronome</button>
+
+      <button id="stop" hidden onclick="stop()" >Stop</button>
+
+      <div class="checkContainer">
+        <input type="checkbox" name="checkbox" id="check"> Stress first beat
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
